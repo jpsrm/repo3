@@ -1,7 +1,9 @@
 
 provider "aws" {
-region = "ap-south-1"
-alias =  "Mumbai"
+region  = "${var.region}"
+}
+variable "region" {
+  type = string
 }
 variable "acc_no" {
   type = string
