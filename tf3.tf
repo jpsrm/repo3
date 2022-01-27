@@ -1,8 +1,5 @@
 provider "aws" {
-region  = "${var.region}"
-}
-variable "region" {
-  type = string
+region = "ap-south-1"
 }
 variable "acc_no" {
   type = string
